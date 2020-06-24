@@ -7,16 +7,16 @@ import org.junit.jupiter.api.Test;
 
 public class BritishShortHairTest extends CatTest{
 	String gender;
-	Object age;
-	Object weight;
-	Object isAMouser;
-	Object name;
+	int age;
+	double weight;
+	Boolean isAMouser;
+	String name;
 
 	private static Cat garfield;
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-		super(name, gender, age, weight, isAMouser);
-		thisname.name;
+		//super(name, gender, age, weight, isAMouser);
+		//thisname.name;
 		garfield = new Cat("Garfield", "male", 10, 20.75, false);
 	}
 
