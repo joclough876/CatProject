@@ -7,16 +7,22 @@ import org.junit.jupiter.api.Test;
 
 public class PersianTest extends CatTest {
 	
-	private static Cat dimples;
+	private static Persian dimples;
 	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-		dimples = new Cat("Dimples", "female", 2, 3.09, true);
+		dimples = new Persian("Dimples", "female", 2, 3.09, true);
 	}
 
 	@Test
 	void cat_GivenFiveParameters_ShouldConstructCat() {
-		assertTrue(dimples instanceof Cat);
+		assertTrue(dimples instanceof Persian);
+		assertEquals("Dimples", dimples.getName());
+		assertEquals("female", dimples.getGender());
+		assertEquals(2, dimples.getAge());
+		assertNotEquals("Jodi", dimples.getName());
+		assertEquals(true, dimples.getIsAMouser());
+		assertNotEquals(5.45, dimples.getWeight());
 	}
 
 }

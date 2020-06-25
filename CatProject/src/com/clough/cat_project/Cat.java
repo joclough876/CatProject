@@ -22,18 +22,25 @@ public class Cat {
 		return name;
 	}
 
+	public void setName(String name) {
+		this.name = name;
+	}
+	
 	public String getGender() {
 		// TODO Auto-generated method stub
 		return gender;
 	}
 
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
 	public int getAge() {
 		// TODO Auto-generated method stub
 		return age;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	public Boolean getIsAMouser() {
