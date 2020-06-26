@@ -2,8 +2,6 @@ package com.clough.cat_project;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.Assertions;
-//import static org.junit.ass
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -36,8 +34,30 @@ class CatTest {
 		assertEquals(true, felix.getIsAMouser());
 		assertNotEquals(5.45, felix.getWeight());
 		//assertNotEquals(catsounds, felix.meow(3));
+	}
+	@Test
+	
+	void meow_GivenNumTimes_PrintToConsoleNumTimesOfMeows()
+	{felix.meow(2);
 		
 	}
-
 	
-}
+	@Test
+	void meow_GivenString_IsTrue() {
+		assertTrue("meow".equals(felix.meow("meow", 10)));
+		assertEquals("meow", felix.meow("meow", 8));
+	}
+	
+	@Test
+	void meow_GivenStringAndSize_ShouldReturnArrayOfStrings() {
+		int length = 10;
+		String catreply = "meow";
+		String[] strings = felix.meow(catreply, length);
+		assertEquals(length, strings.length);
+		for(int i=0; i<length; i++) {
+			assertEquals(catreply, strings);
+		}
+		
+	}
+	}
+

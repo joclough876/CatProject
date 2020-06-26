@@ -10,7 +10,7 @@ public class BritishShortHair extends Cat {
 		private boolean isAMouser;
 		
 	public BritishShortHair(String name, String gender, int age, double weight, boolean isAMouser) {
-		// TODO Auto-generated constructor stub
+
 		super(name, gender, age, weight, isAMouser);
 		this.name = name;
 		this.gender = gender;

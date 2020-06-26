@@ -24,7 +24,7 @@ public class Cat {
 
 	
 	public String getName() {
-		// TODO Auto-generated method stub
+		
 		return name;
 	}
 
@@ -33,7 +33,7 @@ public class Cat {
 	}
 	
 	public String getGender() {
-		// TODO Auto-generated method stub
+		
 		return gender;
 	}
 
@@ -45,17 +45,16 @@ public class Cat {
 		this.age = age;
 	}
 	public int getAge() {
-		// TODO Auto-generated method stub
 		return age;
 	}
 
 	public Boolean getIsAMouser() {
-		// TODO Auto-generated method stub
+		
 		return isAMouser;
 	}
 
 	public Double getWeight() {
-		// TODO Auto-generated method stub
+
 		return weight;
 	}
 
@@ -72,9 +71,17 @@ int numTimes = 1;
 
 		for(int i=1; i <= numTimes; i++) {
 			str =str + " Meow"; }
-		//this.str= str;
 		System.out.println(str + "!");
 	}
 
+	public String[] meow(String string, int size) {
+		String[] strings = new String[size];
+		for(int i=0; i<size; i++) {
+			strings[i] = string;
+		}
+		return strings;
+	
+		}
+	}
 
-}
+
