@@ -60,5 +60,20 @@ public class Cat {
 	public void setWeight(double weight) {
 		this.weight = weight;
 	}
+String str= "";
+int numTimes = 1;
+	public void meow(int numTimes) {
+
+		for(int i=1; i <= numTimes; i++) {
+			str =str + " Meow"; }
+		//this.str= str;
+		System.out.println(str);
+	}
+
+	public void getMeow() {
+		// TODO Auto-generated method stub
+		meow(1);
+		//this.str= str;
+	}
 
 }
