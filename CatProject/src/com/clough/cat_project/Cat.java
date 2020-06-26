@@ -8,15 +8,21 @@ public class Cat {
 	private double weight;
 	private boolean isAMouser;
 	
+	public Cat() {
+		name = "";
+		gender = "";
+		age =0;
+		weight = 0;
+		isAMouser = true;
+	}
 	public Cat(String name, String gender, int age, double weight, boolean isAMouser) {
 		this.name = name;
 		this.gender = gender;
 		this.age = age;
 		this.setAMouser(isAMouser);
-		this.weight = weight;
-		// TODO Auto-generated constructor stub
-	}
+		this.weight = weight;}
 
+	
 	public String getName() {
 		// TODO Auto-generated method stub
 		return name;
@@ -67,13 +73,8 @@ int numTimes = 1;
 		for(int i=1; i <= numTimes; i++) {
 			str =str + " Meow"; }
 		//this.str= str;
-		System.out.println(str);
+		System.out.println(str + "!");
 	}
 
-	public void getMeow() {
-		// TODO Auto-generated method stub
-		meow(1);
-		//this.str= str;
-	}
 
 }
