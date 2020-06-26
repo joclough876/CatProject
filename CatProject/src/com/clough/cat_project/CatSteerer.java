@@ -3,13 +3,14 @@ package com.clough.cat_project;
 public class CatSteerer {
 
 	public static void main(String [] args) {
-		// TODO Auto-generated method stub
-		//private static Cat tabby;
 		
-		Cat tabby = new Cat("jl", "jlj", 2, 23, true);
-		//BritishShortHair alexa = new BritishShortHair("alexa", "female", 2,1, false);
-		
+		Persian dimples = new Persian("Dimples", "female", 4, 20, true);
+		BritishShortHair garfield = new BritishShortHair("Garfield", "male", 8, 60.76, true);
+		Cat tabby = new Cat("Tabby", "male", 2, 23, true);
+
+		garfield.meow(5);
 		tabby.meow(10);
+		dimples.meow(3);
 	}
 
 }
